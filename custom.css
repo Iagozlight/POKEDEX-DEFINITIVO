@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px ;
+}
+
+.topnav {
+    overflow:hidden;
+}
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration-line: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: red;
+    font-size:larger;
+}
+
+header > .topnav > input {
+    border: none;
+
+}
+
+header > .topnav > #lupa {
+    color: black;
+
+}
+
+header > .topnav {
+    background-color: white;
+}
