@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: oklch(12.9% 0.042 264.695);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -10,8 +10,9 @@ header {
     padding: 60px ;
 }
 
-.topnav {
+header > .topnav {
     overflow:hidden;
+    background-color: red;
 }
 a {
     color: white;
