@@ -15,3 +15,6 @@ const lista_pokemonsJSON = JSON.stringify(lista_pokemons)
 const lista_pokemonsPARSE = JSON.parse(lista_pokemonsJSON)
 console.log(lista_pokemonsJSON)
 console.log(lista_pokemonsPARSE)
+
+
+//Aqui Mateus deu a bunda.
