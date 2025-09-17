@@ -7,12 +7,20 @@ body{
 header {
     display: flex;
     justify-content: space-between;
-    padding: 60px ;
+    padding: 60px;
 }
 
-header > .topnav {
-    overflow:hidden;
+header > #container {
     background-color: red;
+    
+}
+
+header > #container > .topnav {
+    display: flex;
+    overflow:hidden;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: 8px;
 }
 a {
     color: white;
@@ -26,16 +34,12 @@ a:hover {
     font-size:larger;
 }
 
-header > .topnav > input {
+header > #container > .topnav > input {
     border: none;
 
 }
 
-header > .topnav > #lupa {
+header > #container > .topnav > #lupa {
     color: black;
 
-}
-
-header > .topnav {
-    background-color: white;
 }
