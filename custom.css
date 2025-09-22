@@ -11,8 +11,13 @@ header {
 }
 
 header > #container {
-    background-color: red;
-    
+    padding: 8px;
+    display: flex;
+    background-color: oklch(27.9% 0.041 260.031);
+    width: 430px;
+    height: 140px;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 header > #container > .topnav {
@@ -21,6 +26,7 @@ header > #container > .topnav {
     align-items: flex-end;
     background-color: white;
     border-radius: 8px;
+    width: 400px;
 }
 a {
     color: white;
@@ -28,6 +34,7 @@ a {
     text-decoration-line: none;
     transition: 0.2s;
 }
+
 
 a:hover {
     color: red;
