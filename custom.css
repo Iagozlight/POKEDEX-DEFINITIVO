@@ -14,10 +14,11 @@ header > #container {
     padding: 8px;
     display: flex;
     background-color: oklch(27.9% 0.041 260.031);
-    width: 430px;
-    height: 140px;
+    width: 736px;
+    height: 244px;
     align-items: flex-end;
     justify-content: center;
+    border-radius: 8px;
 }
 
 header > #container > .topnav {
@@ -26,7 +27,9 @@ header > #container > .topnav {
     align-items: flex-end;
     background-color: white;
     border-radius: 8px;
-    width: 400px;
+    width: 683px;
+    height: 32px;
+    align-items: center;
 }
 a {
     color: white;
