@@ -51,5 +51,10 @@ header > #container > .topnav > input {
 
 header > #container > .topnav > #lupa {
     color: black;
+}
 
+ul#listaPokemons li {
+  margin: 5px 0;
+  font-size: 18px;
+  color: white; 
 }
