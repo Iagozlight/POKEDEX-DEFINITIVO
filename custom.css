@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 60px;
+    background-image: url(LOGO.webp);
 }
 
 header > #container {
@@ -51,6 +52,12 @@ header > #container > .topnav > input {
 
 header > #container > .topnav > #lupa {
     color: black;
+}
+
+#logo {
+    height: 150px;
+    width: auto;
+
 }
 
 ul#listaPokemons li {
