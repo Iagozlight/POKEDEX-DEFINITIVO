@@ -13,9 +13,9 @@ header {
 header > #container {
     padding: 8px;
     display: flex;
-    background-color: oklch(27.9% 0.041 260.031);
-    width: 736px;
-    height: 244px;
+    background-color: #0F172B;
+    width: 536px;
+    height: 122px;
     align-items: flex-end;
     justify-content: center;
     border-radius: 8px;
@@ -56,5 +56,5 @@ header > #container > .topnav > #lupa {
 ul#listaPokemons li {
   margin: 5px 0;
   font-size: 18px;
-  color: white; 
+  color: white;
 }
