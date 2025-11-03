@@ -2,11 +2,14 @@ const conta = document.getElementsByClassName('btn-login');
 const emailInput = document.querySelector('.email');
 const senhaInput = document.querySelector('.senha');
 
-
-
 function salvar_conta() {
-    localStorage.setItem("EmailSalvo", emails);
-    localStorage.setItem("SenhasSalvo", senhas);
+    const email = emailInput.value;
+    const senha = senhaInput.value;
+
+    localStorage.setItem("EmailSalvo", email);
+    localStorage.setItem("SenhaSalva", senha);
+
+    alert("Conta salva com sucesso!");
 }
 
 function mostrarNome() {
@@ -15,4 +18,3 @@ function mostrarNome() {
       ? `Olá, ${nomeSalvo}!`
       : "Nenhum nome salvo ainda.";
 }
-
