@@ -8,21 +8,14 @@ O objetivo é permitir que qualquer usuário explore informações detalhadas so
 
 🔥 Funcionalidades
 
-Listagem de Pokémon com imagens oficiais
-
-Exibição de informações individuais (tipo, habilidades, descrição etc.)
-
-Sistema de filtro por tipos
-
-Interface amigável e responsiva
-
-Dados consumidos via PokéAPI
+- Listagem de Pokémon com imagens oficiais
+- Exibição de informações individuais (tipo, habilidades, descrição etc.)
+- Sistema de filtro por tipos
+- Interface amigável e responsiva
+- Dados consumidos via PokéAPI
 
 🛠️ Tecnologias utilizadas
 
-HTML, CSS e JavaScript
-
-Fetch API
-
-PokéAPI (https://pokeapi.co/
-)
+- HTML, CSS e JavaScript
+- Fetch API
+- PokéAPI (https://pokeapi.co/
