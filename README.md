@@ -4,18 +4,18 @@
 https://www.figma.com/design/3TAdbLkkQk7dI6UWNPn62N/Sem-t%C3%ADtulo?node-id=0-1&t=4AmY479C2tQCEDWU-1
 
 Este projeto é uma Pokédex interativa, desenvolvida por Iago Carlos e Mateus dos Santos.
-O objetivo é permitir que qualquer usuário explore informações detalhadas sobre diversos Pokémon de forma simples, rápida e visualmente agradável.
 
 🔥 Funcionalidades
 
-- Listagem de Pokémon com imagens oficiais
+- Listagem de Pokémon com sprites oficiais
 - Exibição de informações individuais (tipo, habilidades, descrição etc.)
-- Sistema de filtro por tipos
-- Interface amigável e responsiva
-- Dados consumidos via PokéAPI
+- Sistema de filtro por tipos e geração.
+- Interface amigável.
+- Dados consumidos via PokéAPI e variavéis.
 
 🛠️ Tecnologias utilizadas
 
 - HTML, CSS e JavaScript
 - Fetch API
 - PokéAPI (https://pokeapi.co/
+- PokéAPI specimes.
