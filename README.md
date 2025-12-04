@@ -3,7 +3,7 @@
 
 https://www.figma.com/design/3TAdbLkkQk7dI6UWNPn62N/Sem-t%C3%ADtulo?node-id=0-1&t=4AmY479C2tQCEDWU-1
 
-Este projeto é uma Pokédex interativa, desenvolvida por Bumpierslink e Mateus dos Santos.
+Este projeto é uma Pokédex interativa, desenvolvida por Iago Carlos e Mateus dos Santos.
 O objetivo é permitir que qualquer usuário explore informações detalhadas sobre diversos Pokémon de forma simples, rápida e visualmente agradável.
 
 🔥 Funcionalidades
