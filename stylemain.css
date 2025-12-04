@@ -1,0 +1,324 @@
+body {
+    background-color: oklch(12.9% 0.042 264.695);
+    padding: 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 94vh;
+    height: 25vh;
+    padding: 0.5rem;
+    background-color: oklch(20.8% 0.042 265.755);
+    border-radius: 8px;
+}
+
+.pesquisa {
+    width: 85vh;
+    height: 4vh;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Chewy', cursive;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.pesquisa:focus {
+    outline: none;
+}
+
+#logo {
+    max-width: 30%;
+    max-height: 30%;
+    transform: translateX(2.5rem, -2rem);
+    scale: 120%;
+}
+
+#login {
+    color: white;
+    font-size: 2rem;
+    transform: translateX(8rem, 2rem);
+    cursor: pointer;
+}
+
+#login:active {
+    color: red;
+    scale: 101%;
+}
+
+.pokemon-card {
+    position: relative;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    will-change: transform;
+    cursor: pointer;
+}
+.pokemon-card:hover {
+    transform: scale(1.08);
+    z-index: 10;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+}
+
+.pokemon-card img {
+    transition: transform 200ms ease;
+}
+.pokemon-card:hover img {
+    transform: translateY(-6px) scale(1.12);
+}
+
+.fav-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.95);
+    color: #222;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    padding: 0;
+}
+.fav-btn:focus { outline: none; }
+
+.fav-btn.active {
+    background: #ffdd57;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+.pokemon-card:hover .fav-btn { transform: none; }
+
+#pokemonInfoOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#pokemonInfoCard {
+    background: oklch(12.9% 0.042 264.695);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 320px;
+    color: white;
+    position: relative;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    animation: aparecer 200ms ease;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+#closeInfo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#pokemonInfoContent img {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+.stats-box,
+.about-box {
+    background: rgba(255,255,255,0.1);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.stats-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+}
+
+.filter-btn {
+    border-radius: 16px;
+    padding: 0.6rem 1rem;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    cursor: pointer;
+    font-family: 'Chewy', cursive;
+    font-size: 1rem;
+}
+
+.filter-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.menu {
+    position: absolute;
+    top: 3.2rem;
+    left: 0;
+    background: oklch(12.9% 0.042 264.695);
+    color: white;
+    border-radius: 8px;
+    padding: 0.6rem;
+    width: 220px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+#typesMenu {
+    left: 12.5rem;
+    width: 220px;
+    top: 0.2rem;
+}
+
+#gensMenu {
+    left: 12.5rem;
+    width: 180px;
+    top: 0.2rem;
+}
+
+.menu.hidden {
+    display: none;
+}
+
+.menu-option,
+.gen-option {
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: left;
+    padding: 0.45rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.menu-option:hover,
+.gen-option:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+.types-list {
+    max-height: 220px;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+.types-list label {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .25rem;
+    cursor: pointer;
+}
+
+.types-list input[type="checkbox"] {
+    transform: scale(1.1);
+}
+
+.filter-active {
+    box-shadow: 0 0 10px rgba(255,255,255,0.12) inset;
+}
+
+.panel-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1200;
+}
+
+.pokemon-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    max-width: 100%;
+    height: 100vh;
+    background: oklch(12.9% 0.042 264.695);
+    color: white;
+    z-index: 1300;
+    box-shadow: -8px 0 30px rgba(0,0,0,0.5);
+    overflow: auto;
+    padding: 1rem 1rem 2rem 1rem;
+    transform: translateX(100%);
+}
+
+.panel-close {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.panel-content img {
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+    width: 180px;
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOutToRight {
+    from { transform: translateX(0); opacity: 1; }
+    to   { transform: translateX(100%); opacity: 0; }
+}
+
+.pokemon-panel.open {
+    display: block;
+    animation: slideInFromRight 280ms ease forwards;
+    transform: translateX(0);
+}
+.pokemon-panel.closing {
+    animation: slideOutToRight 240ms ease forwards;
+}
+
+.panel-overlay.visible {
+    display: block;
+}
+
+.panel-section { margin-top: .6rem; background: rgba(255,255,255,0.03); padding: .6rem; border-radius: 8px; }
+.panel-row { display:flex; justify-content:space-between; gap:.5rem; align-items:center; }
+.panel-list { list-style:none; padding:0; margin:0; }
+.panel-list li { margin: .25rem 0; }
+
+@media (max-width:420px) {
+    .pokemon-panel { width: 92%; }
+}
+

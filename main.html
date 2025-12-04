@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="stylemain.css">
+    <title>Pokedex FI</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+            <form>
+                <input type="text" class="pesquisa" placeholder="Buscar pokémon...">
+            </form>
+        </div>
+        <img src="imagem/LOGO.webp" id="logo" alt="logo">
+        <a href="LOGIN/login.html" id="login">LOGIN <i class="fa-solid fa-user"></i></a>
+    </header>
+    <main>
+        <div class="filter-wrapper">
+            <button id="filterBtn" class="filter-btn" aria-haspopup="true" aria-expanded="false">Filtrar ▾</button>
+
+            <div id="mainMenu" class="menu hidden" role="menu" aria-hidden="true">
+                <button class="menu-option" data-open="typesMenu">Elementos</button>
+                <button class="menu-option" data-open="gensMenu">Gerações</button>
+                <button class="menu-option" data-filter="favorites">Favoritos</button>
+                <button class="menu-option clear-filters">Limpar filtros</button>
+            </div>
+
+            <div id="typesMenu" class="menu hidden" role="menu" aria-hidden="true">
+                <div class="menu-title">Tipos</div>
+                <div id="typesList" class="types-list">
+                </div>
+            </div>
+
+            <div id="gensMenu" class="menu hidden" role="menu" aria-hidden="true">
+                <div class="menu-title">Gerações</div>
+                <div class="gens-list">
+                    <button class="gen-option" data-gen="1">Geração 1</button>
+                    <button class="gen-option" data-gen="2">Geração 2</button>
+                    <button class="gen-option" data-gen="3">Geração 3</button>
+                    <button class="gen-option" data-gen="4">Geração 4</button>
+                    <button class="gen-option" data-gen="5">Geração 5</button>
+                    <button class="gen-option" data-gen="6">Geração 6</button>
+                    <button class="gen-option" data-gen="7">Geração 7</button>
+                    <button class="gen-option" data-gen="8">Geração 8</button>
+                    <button class="gen-option" data-gen="9">Geração 9</button>
+                </div>
+            </div>
+        </div>
+
+        <ul id="listaPokemons"></ul>
+    </main>
+    <footer>
+
+    </footer>
+
+    <div id="pokemonInfoOverlay">
+    <div id="pokemonInfoCard">
+        <button id="closeInfo">X</button>
+        <div id="pokemonInfoContent"></div>
+    </div>
+</div>
+
+<div id="panelOverlay" class="panel-overlay hidden" aria-hidden="true"></div>
+<aside id="pokemonPanel" class="pokemon-panel hidden" aria-hidden="true">
+    <button id="panelClose" class="panel-close" aria-label="Fechar">×</button>
+    <div id="pokemonPanelContent" class="panel-content">
+    </div>
+</aside>
+
+    <script src="scriptmain.js"></script>
+</body>
+</html>
